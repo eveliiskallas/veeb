@@ -24,3 +24,18 @@ echo $var5.' - '.gettype($var5).'<br / >';
 echo $var6.' - '.gettype($var6).'<br / >';
 echo $var7.' - '.gettype($var7).'<br / >';
 echo $var8.' - '.gettype($var8).'<br / >';
+// võrdleme omavahel erinevad väärtused
+// == - võrdne
+$tulemus = $var1 == $var2;
+echo 'Kas $var1 on võrdne $var2? -'.$tulemus;
+echo '<br / >';
+$tulemus = $var1 == $var3;
+echo 'Kas $var1 on võrdne $var3? -'.$tulemus;
+echo '<br / >';
+// === - võrdne - kontrollitaksde väärtust kui ka tüüpi
+$tulemus = $var1 === $var3;
+echo 'Kas $var1 on võrdne $var3? -'.$tulemus;
+echo '<br / >';
+// != -ei võrdu
+$tulemus = $var1 != $var4;
+echo 'Kas $var1 ei ole võrdne $var4? -'.$tulemus;
