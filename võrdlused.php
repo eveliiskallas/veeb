@@ -39,3 +39,20 @@ echo '<br / >';
 // != -ei võrdu
 $tulemus = $var1 != $var4;
 echo 'Kas $var1 ei ole võrdne $var4? -'.$tulemus;
+echo '<hr />';
+// ++ --
+$a = 2; $b = 5;
+$c = $a++; // a = 2 ; b = 5 - vale ;
+$d = $b--; // c = 3 ; d = 4 - vale;
+echo 'a = '.$a.
+    '; b= '.$b.
+    '; c = '.$c.
+    '; d = '.$d.'<br />';
+$a = 2; $b = 5;
+$c = ++$a; // a = 3 ; b = 4
+$d = --$b; // c = 3 ; d = 4 
+echo 'a = '.$a.
+    '; b= '.$b.
+    '; c = '.$c.
+    '; d = '.$d.'<br />';
+
