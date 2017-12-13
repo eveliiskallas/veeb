@@ -5,6 +5,7 @@
  * Date: 13.12.2017
  * Time: 8:44
  */
+header('Refresh: 2');
 $ilm = 'Päike paistab';
 if ($ilm == 'Sajab'){
     $tuju = 'halb';
@@ -15,7 +16,6 @@ echo 'Väljas '.$ilm.'<br />';
 echo 'Minul on  '.$tuju.' tuju<br />';
 //
 $vanus = rand(0, 100);
-echo $vanus;
 if($vanus >= 0 and $vanus < 11) {
     $staatus = 'laps';
 } elseif ($vanus > 10 and $vanus < 18) {
@@ -27,3 +27,4 @@ if($vanus >= 0 and $vanus < 11) {
 }
 echo 'Olen  '.$vanus.' aastat vana.<br />';
 echo 'Olen '.$staatus.'<br />';
+
