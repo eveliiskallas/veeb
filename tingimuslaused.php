@@ -32,4 +32,21 @@ if($vanus >= 0 and $vanus < 11) {
 }
 echo 'Olen  '.$vanus.' aastat vana.<br />';
 echo 'Olen '.$staatus.'<br />';
+//
+$number = rand(1, 6);
+echo $number.' - ';
+switch ($number) {
+    case 1: echo 'üks';
+    break;
+    case 2: echo 'kaks';
+    break;
+    case 3: echo 'kolm';
+    break;
+    case 4: echo 'neli';
+    break;
+    case 5: echo 'viis';
+    break;
+    default: echo 'antud numbrit ei tea';
+
+}
 
