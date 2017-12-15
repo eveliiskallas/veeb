@@ -47,6 +47,9 @@ switch ($number) {
     case 5: echo 'viis';
     break;
     default: echo 'antud numbrit ei tea';
-
 }
+/**
+ * Koosta PHP skript nimega kuud.php
+ *
+ */
 
