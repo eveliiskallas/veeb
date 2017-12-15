@@ -14,6 +14,10 @@
  * Loo funktsioon genereeriVarv, mis genereerib ja tagastab põhiprogrammile genereeritud värv kujul #xxxxxx
  * vihje: Kasuta tsüklis loodud koodi ja teisenda see funktsiooniks
  */
+
+/**
+ * Rakenda loodud funktsioon iga pesa värvimiseks
+ */
 function genereeriVarv(){
     $varv = '#';
     for($kord = 1; $kord <= 6; $kord++){
@@ -30,9 +34,9 @@ function valjastaTabel($ridadeArv, $veergudeArv) {
     for($reaNumber = 1; $reaNumber <=  $ridadeArv; $reaNumber++) {
         echo '<tr>';
         for($veeruNumber = 1; $veeruNumber <= $veergudeArv; $veeruNumber++){
-            echo '<td>';
+            echo '<td style="background-color: '.genereeriVarv().';">';
             echo rand(10, 99);
-            echo '</ td>';
+            echo '</td>';
         }
         echo'</tr>';
     }
