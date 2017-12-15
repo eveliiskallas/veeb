@@ -9,6 +9,22 @@
  * Koosta funktsioon nimega valjastaTabel, mis võtab parameetritena tabeli ridade ja veergude arv ning väljastab
  * vastava suurusega tabel, mille pesad on täidetud juhuarvudega vaahemikus 10-99
  */
+
+/**
+ * Loo funktsioon genereeriVarv, mis genereerib ja tagastab põhiprogrammile genereeritud värv kujul #xxxxxx
+ * vihje: Kasuta tsüklis loodud koodi ja teisenda see funktsiooniks
+ */
+function genereeriVarv(){
+    $varv = '#';
+    for($kord = 1; $kord <= 6; $kord++){
+        $juhuTaisarv = rand(0,15);
+        $juhuHex = dechex($juhuTaisarv);
+        $varv = $varv.$juhuHex;
+    }
+    return $varv;
+}
+
+
 function valjastaTabel($ridadeArv, $veergudeArv) {
     echo '<table border="1">';
     for($reaNumber = 1; $reaNumber <=  $ridadeArv; $reaNumber++) {
