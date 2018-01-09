@@ -98,7 +98,7 @@ function raamatuteTabel($raamatud){
     echo '</table>';
 }
 
-function ots iRaamat($raamatud, $status){
+function otsiRaamat($raamatud, $status){
     $leitudRaamatud = array();
     foreach($raamatud as $raamat){
         if($raamat['status'] == $status){
