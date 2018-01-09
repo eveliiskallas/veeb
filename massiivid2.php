@@ -75,7 +75,7 @@ foreach ($opilased as $opilane) {
 
 function raamatuteTabel($raamatud){
     echo '<table border="1">';
-    $pealkiriValjastatud = 0;
+    $pealkiriValjastatud = false;
     foreach($raamatud as $raamat){
         echo '<tr>';
         if(!$pealkiriValjastatud){
@@ -96,6 +96,16 @@ function raamatuteTabel($raamatud){
         echo '</tr>';
     }
     echo '</table>';
+}
+
+function ots iRaamat($raamatud, $status){
+    $leitudRaamatud = array();
+    foreach($raamatud as $raamat){
+        if($raamat['status'] == $status){
+            $leitudRaamatud[] = $raamat;
+        }
+    }
+    return $leitudRaamatud;
 }
 
 
@@ -131,5 +141,8 @@ $raamatud = array(
         'status' => 'valjas'
     )
 );
+
+$kohalRaamatud = otsiRaamat($raamatud, 'sees');
+raamatuteTabel($kohalRaamatud);
 
 raamatuteTabel($raamatud);
