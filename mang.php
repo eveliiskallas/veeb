@@ -25,28 +25,51 @@
  */
 
 
-
-function mang (){
+function manguVorm(){
+     $katseteArv = $_POST['katseteArv'];
+    $katseteArv = isset($katseteArv) ? ++$katseteArv : 0;
         echo'
         <form action="'.$_SERVER['PHP_SELF'].'" method="post">
-           Sisesta arv: <input type="text" name="arv">
+           Sisesta arv: </br />
+           <input type="text" name="kasutajaArv">
+           <input type="hidden" name="katseteArv" value="'.$katseteArv.'">
             <br />
-            <input type="submit" value="Saada">
+            <input type="submit" value="Kontrolli">
         </form>
     ';
-
-    }
+}
 function kontrolliArv(){
-    if (!empty($_POST)) {
-        extract($_POST);
-        foreach ($_POST as $voti=>$vaartus) {
-            if (empty($_POST[$voti])) {
-                echo 'Arv peab olema sisestatud!!<br />';
+    $serveriArv = 12;
+    if(!empty($_POST)){
+        $kasutajaArv = $_POST['kasutajaArv'];
+        foreach ($_POST as $voti=>$vaartus){
+            if(empty($_POST[$voti])){
+                echo 'Arv peab olema sisestatud!<br />';
                 exit;
             }
         }
         if($kasutajaArv < $serveriArv){
-        echo 'Sinu arv on väiksem <br />'
-
+            echo 'Sinu arv on väiksem kui serveri oma<br />';
+        }
+        if($kasutajaArv > $serveriArv){
+            echo 'Sinu arv on suurem kui serveri oma<br />';
+        }
+        if(abs($kasutajaArv - $serveriArv) <= 5){
+            if($kasutajaArv == $serveriArv){
+                echo 'Palju õnne! Arvasid ära!<br />';
+                exit;
+            }
+            echo 'Sinu arv on juba väga lähedal<br />';
+        }
     }
+}
+manguVorm();
+kontrolliArv();
+
+
+
+
+
+
+  
 
