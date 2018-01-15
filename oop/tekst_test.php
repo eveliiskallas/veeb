@@ -9,7 +9,7 @@ require_once 'tekst.php';
 // loome teksti objekti
 $minuTekst = new tekst();
 //määrame kindlas sõnas tekstis
-$minuTekst->sonad = "Tere Maailm!";
+$minuTekst->maaraTekst('Tere Maailm!');
 // väljastame objekti sisu test kujul
 echo '<pre>';
 print_r($minuTekst);
