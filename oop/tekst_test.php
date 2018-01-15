@@ -7,7 +7,6 @@
  */
 require_once 'tekst.php';
 // loome teksti objekti
-$minuTekst = new tekst();
 //määrame kindlas sõnas tekstis
 $minuTekst = new tekst('Tere Maailm!');
 // väljastame objekti sisu test kujul
