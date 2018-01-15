@@ -14,3 +14,5 @@ $minuTekst = new tekst('Tere Maailm!');
 echo '<pre>';
 print_r($minuTekst);
 echo '</pre>';
+// väljastame objekti korralikul kujul
+$minuTekst -> prindiTekst();
