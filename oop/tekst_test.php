@@ -28,3 +28,16 @@ print_r($varvituTekst);
 echo '</pre>';
 // väljastame objekti korralikul kujul
 $varvituTekst -> prindiTekst();
+
+// loome teksti objekti
+$roosaTekst = new vTekst('Värvitu tekst', 'roosa');
+//määrame kindlas sõnas tekstis
+// väljastame objekti sisu test kujul
+echo '<pre>';
+print_r($roosaTekst);
+echo '</pre>';
+// väljastame objekti korralikul kujul
+$roosaTekst -> prindiTekst();
+
+
+//ff0066
