@@ -12,6 +12,7 @@ class tabel
     var $pealkirjad = array();
     var $tabeliSisu = array();
     var $veergudeArv;
+    var $tabel;
 
     /**
      * tabel constructor.

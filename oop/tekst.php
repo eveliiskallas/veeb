@@ -22,14 +22,17 @@ class tekst
      */
     public function __construct($sonad = '')
     {
-       $this -> maaraTekst($sonad);
+        $this->maaraTekst($sonad);
     }
-    function maaraTekst($sonad){
-        $this->sonad = $sonad;
 
+    function maaraTekst($sonad)
+    {
+        $this->sonad = $sonad;
     }
-    function prindiTekst(){
-        echo $this -> sonad.'<br />';
+
+    function prindiTekst()
+    {
+        echo $this->sonad . '<br />';
     }
 
 }

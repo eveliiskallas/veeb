@@ -30,7 +30,7 @@ echo '</pre>';
 $varvituTekst -> prindiTekst();
 
 // loome teksti objekti
-$roosaTekst = new vTekst('Värvitu tekst', 'roosa');
+$roosaTekst = new vTekst('Värvitu tekst', '#ff0066');
 //määrame kindlas sõnas tekstis
 // väljastame objekti sisu test kujul
 echo '<pre>';
