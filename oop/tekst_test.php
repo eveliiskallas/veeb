@@ -15,3 +15,16 @@ print_r($minuTekst);
 echo '</pre>';
 // väljastame objekti korralikul kujul
 $minuTekst -> prindiTekst();
+
+echo '<hr />';
+
+require_once 'vTekst.php';
+// loome teksti objekti
+//määrame kindlas sõnas tekstis
+$varvituTekst = new vTekst('Värvitu tekst');
+// väljastame objekti sisu test kujul
+echo '<pre>';
+print_r($varvituTekst);
+echo '</pre>';
+// väljastame objekti korralikul kujul
+$varvituTekst -> prindiTekst();
